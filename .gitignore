@@ -1,0 +1,30 @@
+# Node
+node_modules/
+dist/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Logs & Environment
+*.log
+.env
+.env.local
+
+# Web3 Build Tools
+cache/
+artifacts/
+out/
+forge-artifacts/
+coverage/
+*.tsbuildinfo
+
+# Frameworks
+.next/
+.svelte-kit/
+.vercel/
+
+# Temporary script files
+push.sh
