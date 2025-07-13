@@ -1,10 +1,10 @@
-# Day 01: Bootcamp Setup & Git Discipline
+# Day 01: Training Setup & Git Discipline
 
 ## Objectives
 
 - Install and configure essential tools: VS Code, Git.
 - Understand and practice the basic Git cycle (`init`, `add`, `commit`).
-- Initialize the bootcamp project directory with a standard structure.
+- Initialize the Training project directory with a standard structure.
 - Apply Conventional Commits as the standard for writing commit messages.
 - Connect the local repository to a GitHub account.
 
