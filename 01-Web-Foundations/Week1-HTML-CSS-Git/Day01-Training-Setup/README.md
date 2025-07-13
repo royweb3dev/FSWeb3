@@ -1,4 +1,4 @@
-# Day 01: Training Setup & Git Discipline
+# Day 01: Traning Setup & Git Discipline
 
 ## Objectives
 
@@ -15,12 +15,13 @@ Today focused on establishing a solid foundation. The main concept was Version C
 ## Outputs & Proof of Work
 
 1.  **Repository Initialization:**
+
     - **Commit:** `feat: initial commit - project setup and gitignore`
-    - **Link:** [https://github.com/royweb3dev/FSWeb3/commit/914c679a973a21643c1cd50cd982a7a44f9ba6cc](https://github.com/royweb3dev/FSWeb3/commit/914c679a973a21643c1cd50cd982a7a44f9ba6cc) *(Ganti dengan hash commit Anda jika berbeda)*
+    - **Link:** [https://github.com/royweb3dev/FSWeb3/commit/914c679a973a21643c1cd50cd982a7a44f9ba6cc](https://github.com/royweb3dev/FSWeb3/commit/914c679a973a21643c1cd50cd982a7a44f9ba6cc)
 
 2.  **Directory Scaffolding:**
     - **Commit:** `feat(project): scaffold complete directory structure based on roadmap`
-    - **Link:** [https://github.com/royweb3dev/FSWeb3/commit/ddf789d2d887a2d1d57f07a7e37138093c12660a](https://github.com/royweb3dev/FSWeb3/commit/ddf789d2d887a2d1d57f07a7e37138093c12660a) *(Ganti dengan hash commit Anda jika berbeda)*
+    - **Link:** [https://github.com/royweb3dev/FSWeb3/commit/ddf789d2d887a2d1d57f07a7e37138093c12660a](https://github.com/royweb3dev/FSWeb3/commit/ddf789d2d887a2d1d57f07a7e37138093c12660a)
 
 ## Next Steps
 
