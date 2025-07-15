@@ -1,31 +1,53 @@
-# Day 02 – HTML Structure & Semantics
+# 🗓️ Day 02 – HTML Structure & Semantics
 
-This project is part of my 14-month Full Stack Web3 training roadmap.  
-Before touching smart contracts or building dApps, I'm laying down solid web fundamentals — starting with semantic HTML.
+> _“Markup is not just syntax — it’s structure, accessibility, and intent.”_
 
-## ✅ Objectives
+## 🎯 Objectives
 
-- Build a clean, accessible HTML5 document structure
-- Use semantic tags correctly (`header`, `nav`, `section`, `article`, `footer`, etc.)
-- Avoid overuse of `<div>` by applying meaningful elements
-- Validate markup using W3C tools
+- Build a valid and semantic HTML5 document structure.
+- Understand when to use `<section>`, `<article>`, `<div>`, and how they affect document outline.
+- Apply accessible markup patterns (WCAG-aware).
+- Begin organizing long-term roadmap into structured milestones and technical domains.
 
-## 🧠 Key Takeaways
+---
 
-- Semantic HTML isn’t just about clean code — it impacts accessibility, SEO, and maintainability.
-- Tags like `<section>` and `<article>` aren't decorative. They define structure and meaning.
-- Assistive technologies (like screen readers) rely on these semantics to interpret the content properly.
+## ✅ Tasks Completed
 
-## 🛠️ Tools Used
+- [x] Created semantic layout using HTML5 landmarks (`<header>`, `<nav>`, `<main>`, etc.).
+- [x] Audited document outline with mentor feedback.
+- [x] Removed unnecessary `<div>` wrappers.
+- [x] Secured contact links (no direct DM exposure).
+- [x] Validated page with [W3C Validator](https://validator.w3.org).
+- [x] Refactored About section for clarity and professionalism.
+- [x] Rebuilt Skill Roadmap to match bootcamp architecture (domain-based).
+- [x] Reorganized Project Portfolio into quarterly milestones (Q1–Q4).
 
-- VSCode
-- Live Server
-- W3C HTML Validator
+---
 
-## 🔗 Deliverables
+## 📂 Project Path
 
-- `index.html`: semantic landing page layout (no CSS, no JS)
-- W3C validation report: [View](https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2Froyweb3dev%2FFSWeb3%2Fmain%2F01-Web-Foundations%2FWeek1-HTML-CSS-Git%2FDay02-HTML-Structure-and-Semantics%2Findex.html)
-- Git commit: [Project Scaffolding](https://github.com/royweb3dev/FSWeb3/commit/ddf789d2d887a2d1d57f07a7e37138093c12660a)
+`01-Web-Foundations/Week1-HTML-CSS-Git/Day02-HTML-Structure-and-Semantics/index.html`
 
-## 🧩 Folder Structure
+🧪 Validation:
+
+- ✅ W3C passed
+- ✅ Manual heading audit passed
+- ✅ Logical, accessible, and screen-reader friendly
+
+---
+
+## 🔧 HTML Sample
+
+```html
+<header>
+  <h1>Roy Natsir</h1>
+  <p>Web3 Engineer in Training</p>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#roadmap">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+```
