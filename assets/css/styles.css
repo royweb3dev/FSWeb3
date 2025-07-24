@@ -35,9 +35,22 @@ body {
   margin: 0 auto;
   padding: 1.5rem;
 }
+
 .main-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.8),
+      rgba(17, 17, 17, 0.8)
+    ),
+    /* Overlay 80% opacity */
+      url("https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_1920,h_2856,al_c,q_90,enc_avif,quality_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 
 /* 3. HEADER & FOOTER
@@ -48,23 +61,46 @@ body {
   align-items: center;
   text-align: center;
   gap: 1.25rem;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 2rem;
-  background-color: var(--bg-dark);
 }
 
 .site-header h1 {
   font-size: 2.5rem;
   margin: 0;
-  font-family: var(--font-heading);
-  color: var(--text-light);
+}
+
+.header-sub-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+#reusable-cards .card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+#reusable-cards .card:hover {
+  transform: scale(1.03);
 }
 
 .site-header .subtitle {
   color: var(--text-muted);
-  margin: 0;
+  margin: 0 0 1rem 0;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-nav ul {
@@ -81,8 +117,6 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
 }
 
 .main-nav a:hover {
@@ -90,11 +124,15 @@ body {
 }
 
 .site-footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
   color: var(--text-muted);
   border-top: 1px solid var(--border-color);
-  padding-top: 0.5rem;
+  padding-top: 2.5rem;
   margin-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .site-footer h2 {
@@ -209,11 +247,20 @@ body {
 }
 
 .card {
-  background-color: var(--bg-card);
+  background-color: rgba(28, 28, 28, 0.65);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   padding: 1.5rem;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .card h3 {
   font-size: 1.1rem;
   display: flex;
@@ -237,6 +284,77 @@ body {
 .card ul li p {
   color: var(--text-light);
   font-size: 0.9em;
+}
+
+/*
+  ========================================
+  COMPONENT: Features Section
+  ========================================
+*/
+
+.features-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  background-color: var(--bg-card);
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  background-color: rgba(13, 110, 253, 0.1);
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.feature-card h3 {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+#features .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#features .card i {
+  font-size: 2.5rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+#features .card h3 {
+  font-size: 1.25rem;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* 5. RESPONSIVE DESIGN */
@@ -308,29 +426,4 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
-}
-
-/* === Reusable Navbar Component – Enhanced === */
-
-.header-sub-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.subtitle {
-  font-family: var(--font-body);
-  color: var(--text-muted);
-  font-size: 1rem;
-}
-
-#reusable-cards .card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-#reusable-cards .card:hover {
-  transform: scale(1.03);
 }
